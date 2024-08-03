@@ -5,7 +5,7 @@ async function fetchRepoStats() {
         return;
     }
 
-    const token = 'YOUR_GITHUB_PERSONAL_ACCESS_TOKEN'; // Replace with your GitHub token
+    const token = config.GITHUB_API_KEY; // Replace with your GitHub token
     const headers = {
         'Authorization': `token ${token}`
     };
