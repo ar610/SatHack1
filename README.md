@@ -6,3 +6,5 @@
 # Key information such as the number of stars, contributors, and other relevant repository metrics is extracted and displayed to the user in a clear and concise format.
 
 # This tool serves as a valuable resource for developers and GitHub users seeking quick insights into repository popularity and collaboration. 
+
+# Team members : Amal Raj R, Suraj P, Anagha S
