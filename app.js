@@ -1,5 +1,4 @@
 
-
 async function fetchRepoStats() {
     const repoName = document.getElementById('repoName').value;
     if (!repoName) {
@@ -10,9 +9,10 @@ async function fetchRepoStats() {
     try {
         // Fetch repository details
         const repoResponse = await fetch(`https://api.github.com/repos/${repoName}`);
+        //console.log(repoResponse);
         if (!repoResponse.ok) throw new Error('Repository not found');
         const repoData = await repoResponse.json();
-
+        console.log(repoData);
         // Fetch contributors
         const contributorsResponse = await fetch(repoData.contributors_url);
         if (!contributorsResponse.ok) throw new Error('Contributors not found');
@@ -27,4 +27,3 @@ async function fetchRepoStats() {
         alert(error.message);
     }
 }
-
