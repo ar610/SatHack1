@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Statistics Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .stat {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub Repository Statistics Dashboard</h1>
+    <input type="text" id="repoName" placeholder="Enter repository (e.g., user/repo)">
+    <button onclick="fetchRepoStats()">Get Stats</button>
+    <div class="stats">
+        <div class="stat" id="stars">Stars: 0</div>
+        <div class="stat" id="forks">Forks: 0</div>
+        <div class="stat" id="issues">Open Issues: 0</div>
+        <div class="stat" id="contributors">Contributors: 0</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
